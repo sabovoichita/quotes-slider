@@ -34,20 +34,39 @@ img {
 @media (max-width: 768px) {
   .testimonial-container {
     width: 100%;
-    max-width: 500px;
-    padding: 40px 15px;
+    max-width: 400px;
+    padding: 30px 15px;
+    text-align: center;
   }
 
   img {
-    width: 150px;
-    height: 150px;
-    position: static; /* Remove absolute positioning */
+    width: 120px;
+    height: 120px;
+    position: static;
+    margin: 0 auto;
     display: block;
-    margin: 20px auto 0 auto; /* Center the image */
-    transform: none; /* No translation needed */
+    transform: none;
   }
 
   .username {
     font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-container {
+    padding: 20px 10px;
+    width: 100%;
+    min-width: 280px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .username {
+    font-size: 12px;
   }
 }
