@@ -1,12 +1,12 @@
 const testimonials = [
   {
     name: "Maria T.",
-    photoUrl: "/images/1.jpg",
+    photoUrl: "./images/1.jpg",
     text: "Do something you love everyday!",
   },
   {
     name: "Ana M.",
-    photoUrl: "/images/2.jpg",
+    photoUrl: "./images/2.jpg",
     text: "Never stop loving!",
   },
   {
@@ -18,6 +18,11 @@ const testimonials = [
     name: "Karol W.",
     photoUrl: "./images/4.jpg",
     text: "Smile every day!",
+  },
+  {
+    name: "Dina P.",
+    photoUrl: "./images/5.jpg",
+    text: "Gather love around you!",
   },
 ];
 
@@ -39,7 +44,7 @@ function updateTestimonial() {
   }
   setTimeout(() => {
     updateTestimonial();
-  }, 2000);
+  }, 3000);
 }
 
 updateTestimonial();
