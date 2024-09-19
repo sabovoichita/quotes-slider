@@ -15,7 +15,7 @@ const testimonials = [
     text: "Love youself!",
   },
   {
-    name: "Karol W.",
+    name: "Natali B.",
     photoUrl: "./images/4.jpg",
     text: "Smile every day!",
   },
