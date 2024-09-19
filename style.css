@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   margin: 0;
   display: flex;
@@ -5,65 +6,70 @@ body {
   height: 100vh;
   align-items: center;
   font-family: cursive;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 .testimonial-container {
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  max-width: 500px;
   background: url(images/sky.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rbg(0, 0, 0, 0.3);
-  min-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 70px 20px;
   margin: 5px;
   color: white;
+  text-align: center; /* Center align text */
   position: relative;
+  overflow: hidden; /* Prevent content overflow */
 }
+
+/* Image Styles */
 img {
-  width: 250px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   position: absolute;
-  left: 81%;
+  top: -60px; /* Position above the container */
+  left: 50%;
   transform: translateX(-50%);
 }
+
+/* Username Styling */
 .username {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 100;
 }
+
+/* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
   .testimonial-container {
-    width: 100%;
-    max-width: 400px;
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  img {
-    width: 120px;
-    height: 120px;
-    position: static;
-    margin: 0 auto;
-    display: block;
-    transform: none;
-  }
-
-  .username {
-    font-size: 14px;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .testimonial-container {
-    padding: 20px 10px;
-    width: 100%;
-    min-width: 280px;
+    max-width: 90%; /* Reduce width to fit smaller screens */
+    padding: 40px 15px;
   }
 
   img {
     width: 100px;
     height: 100px;
+    top: -50px; /* Adjust image positioning for smaller screens */
+  }
+
+  .username {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-container {
+    max-width: 90%;
+    padding: 30px 10px;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    top: -40px;
   }
 
   .username {
