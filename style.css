@@ -34,12 +34,20 @@ img {
 @media (max-width: 768px) {
   .testimonial-container {
     width: 100%;
-    max-width: 400px;
-    padding: 100px 15px;
+    max-width: 500px;
+    padding: 40px 15px;
   }
-  .text,
-  h4 {
-    padding-left: 20px;
-    padding-top: 20px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    position: static; /* Remove absolute positioning */
+    display: block;
+    margin: 20px auto 0 auto; /* Center the image */
+    transform: none; /* No translation needed */
+  }
+
+  .username {
+    font-size: 14px;
   }
 }
