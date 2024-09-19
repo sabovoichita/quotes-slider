@@ -17,12 +17,12 @@ body {
   background-size: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 70px 20px;
+  padding: 100px 20px 20px 20px; /* Adjust padding to fit image */
   margin: 5px;
   color: white;
   text-align: center; /* Center align text */
   position: relative;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: visible; /* Allow the image to overflow the container */
 }
 
 /* Image Styles */
@@ -31,9 +31,10 @@ img {
   height: 120px;
   border-radius: 50%;
   position: absolute;
-  top: -60px; /* Position above the container */
+  top: -60px; /* Position image above the text */
   left: 50%;
   transform: translateX(-50%);
+  border: 5px solid white; /* Add a border to separate the image from the container */
 }
 
 /* Username Styling */
@@ -46,7 +47,7 @@ img {
 @media (max-width: 768px) {
   .testimonial-container {
     max-width: 90%; /* Reduce width to fit smaller screens */
-    padding: 40px 15px;
+    padding: 80px 15px 15px 15px; /* Adjust padding */
   }
 
   img {
@@ -63,7 +64,7 @@ img {
 @media (max-width: 480px) {
   .testimonial-container {
     max-width: 90%;
-    padding: 30px 10px;
+    padding: 70px 10px 10px 10px; /* Adjust padding for small screens */
   }
 
   img {
