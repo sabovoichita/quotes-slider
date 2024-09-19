@@ -1,3 +1,3 @@
 # testimonial-slider
 
-[live](https://github.com/sabovoichita/testimonial-slider/)
+[live](https://sabovoichita.github.io/testimonial-slider/)
