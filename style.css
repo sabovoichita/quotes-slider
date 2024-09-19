@@ -35,6 +35,11 @@ img {
   .testimonial-container {
     width: 100%;
     max-width: 400px;
-    padding: 50px 15px;
+    padding: 100px 15px;
+  }
+  .text,
+  h4 {
+    padding-left: 20px;
+    padding-top: 20px;
   }
 }
