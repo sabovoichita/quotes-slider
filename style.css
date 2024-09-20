@@ -6,30 +6,22 @@ body {
   height: 100vh;
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: visible;
 }
 
 .testimonial-container {
-  width: 100%;
-  max-width: 500px;
+  height: 250px;
+  width: 500px;
   background: url(images/sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 100px 20px 20px 20px; /* Adjust padding to fit image */
+  padding: 100px 20px 60px 20px;
   margin: 5px;
-  text-align: center; /* Center align text */
+  text-align: center;
   position: relative;
-  overflow: visible; /* Allow the image to overflow the container */
-}
-.text {
-  color: black;
-  font-size: larger;
-}
-.username {
-  color: black;
-  font-size: smaller;
+  overflow: visible;
 }
 
 /* Image Styles */
@@ -38,29 +30,59 @@ img {
   height: 120px;
   border-radius: 50%;
   position: absolute;
-  top: -60px; /* Position image above the text */
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  border: 5px solid white; /* Add a border to separate the image from the container */
+  border: 5px solid white;
 }
-
+.text {
+  white-space: normal;
+  overflow-wrap: break-word;
+  color: white;
+  font-size: larger;
+  max-height: 120px;
+  overflow: hidden;
+  padding: 10px;
+}
 /* Username Styling */
 .username {
+  display: block;
   font-size: 16px;
   font-weight: 100;
+  color: white;
+  font-size: smaller;
+  margin-top: 10px;
+}
+.quote-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-button:hover {
+  background-color: #0056b3;
 }
 
 /* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
   .testimonial-container {
-    max-width: 90%; /* Reduce width to fit smaller screens */
-    padding: 80px 15px 15px 15px; /* Adjust padding */
+    max-width: 90%;
+    padding: 80px 15px 15px 15px;
+    height: 200px;
   }
 
   img {
     width: 100px;
     height: 100px;
-    top: -50px; /* Adjust image positioning for smaller screens */
+    top: -50px;
   }
 
   .username {
@@ -70,7 +92,7 @@ img {
 
 @media (max-width: 480px) {
   .testimonial-container {
-    max-width: 90%;
+    width: 90%;
     padding: 70px 10px 10px 10px; /* Adjust padding for small screens */
   }
 
