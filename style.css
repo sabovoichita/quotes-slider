@@ -40,7 +40,7 @@ img {
   overflow-wrap: break-word;
   color: white;
   font-size: larger;
-  max-height: 120px;
+  max-height: 100px;
   overflow: hidden;
   padding: 10px;
 }
@@ -62,7 +62,7 @@ img {
   cursor: pointer;
   border-radius: 5px;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -93,7 +93,7 @@ img {
 @media (max-width: 480px) {
   .testimonial-container {
     width: 90%;
-    padding: 70px 10px 10px 10px; /* Adjust padding for small screens */
+    padding: 40px 10px 10px 10px; /* Adjust padding for small screens */
   }
 
   img {
